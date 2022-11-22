@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(img/animated-background.svg); /*change if conflicts*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+}
+
+.title {
+  color: #a8d1f5;
+  text-align: center;
+  font-style: italic;
+  font-size: 46px;
+  font-weight: 600;
+  padding-top: 15px;
+  margin: 0 auto 35px;
+  letter-spacing: 2px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*pivot of loader*/
+}
+
+.image-container {
+  margin: 20px 25%;
+}
+
+.image-container img{
+  width: 100%;
+  border-radius: 15px;
+  margin: 3px 0;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-container img:hover {
+  scale: 1.02;
+  transition: 100ms;
+}
+
+@media screen and (max-width: 650px){
+  .title{
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 28px;
+  }
+  
+  .image-container{
+    margin: 10px;
+  }
+}
